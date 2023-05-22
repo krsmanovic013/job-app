@@ -38,7 +38,6 @@ const Register = () => {
       return;
     }
     dispatch(registerUser({ name, email, password }));
-    // setValues(initialState);
   };
 
   const toggleMember = () => {
