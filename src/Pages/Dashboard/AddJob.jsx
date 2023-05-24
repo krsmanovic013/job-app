@@ -6,6 +6,7 @@ import {
   handleChange,
   clearValues,
   createJob,
+  editJob,
 } from "../../features/job/jobSlice";
 import { useEffect } from "react";
 
@@ -37,7 +38,15 @@ const AddJob = () => {
       toast.error("Please fill out all fields");
       return;
     }
-    //dispatch
+    if (isEditing) {
+      dispatch(
+        editJob({
+          jobId: editJobId,
+          job: { position, company, jobLocation, jobType, status },
+        })
+      );
+      return;
+    }
     dispatch(createJob({ position, company, jobLocation, jobType, status }));
   };
 
@@ -98,7 +107,7 @@ const AddJob = () => {
               onClick={handleSubmit}
               disabled={isLoading}
             >
-              {isLoading ? "Loading..." : "Add Job"}
+              {isEditing ? "Edit job" : "Add Job"}
             </button>
           </div>
         </div>
