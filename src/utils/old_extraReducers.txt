@@ -1,0 +1,112 @@
+**userSlice** :
+
+ // //OLD
+  // extraReducers: {
+  //   [registerUser.pending]: (state) => {
+  //     state.isLoading = true;
+  //   },
+  //   [registerUser.fulfilled]: (state, { payload }) => {
+  //     const { user } = payload;
+  //     state.isLoading = false;
+  //     state.user = user;
+  //     addUserToLocalStorage(user);
+  //     toast.success(`Hello There ${user.name}`);
+  //   },
+  //   [registerUser.rejected]: (state, { payload }) => {
+  //     state.isLoading = false;
+  //     toast.error(payload);
+  //   },
+  //   [loginUser.pending]: (state) => {
+  //     state.isLoading = true;
+  //   },
+  //   [loginUser.fulfilled]: (state, { payload }) => {
+  //     const { user } = payload;
+  //     state.isLoading = false;
+  //     state.user = user;
+  //     addUserToLocalStorage(user);
+  //     toast.success(`Welcome back ${user.name}`);
+  //   },
+  //   [loginUser.rejected]: (state, { payload }) => {
+  //     state.isLoading = false;
+  //     toast.error(payload);
+  //   },
+  //   [updateUser.pending]: (state) => {
+  //     state.isLoading = true;
+  //   },
+  //   [updateUser.fulfilled]: (state, { payload }) => {
+  //     const { user } = payload;
+  //     state.isLoading = false;
+  //     state.user = user;
+  //     addUserToLocalStorage(user);
+  //     toast.success(`User updated!`);
+  //   },
+  //   [updateUser.rejected]: (state, { payload }) => {
+  //     state.isLoading = false;
+  //     toast.error(payload);
+  //   },
+  // },
+
+
+  **jobSlice** :
+
+   // extraReducers: {
+  //   [createJob.pending]: (state) => {
+  //     state.isLoading = true;
+  //   },
+  //   [createJob.fulfilled]: (state) => {
+  //     state.isLoading = false;
+  //     toast.success("Job Created");
+  //   },
+  //   [createJob.rejected]: (state, action) => {
+  //     state.isLoading = false;
+  //     toast.error(action.payload);
+  //   },
+  //   [deleteJob.fulfilled]: (state, action) => {
+  //     toast.success(action.payload);
+  //   },
+  //   [deleteJob.rejected]: (state, action) => {
+  //     toast.error(action.payload);
+  //   },
+  //   //ovo
+  //   [editJob.pending]: (state) => {
+  //     state.isLoading = true;
+  //   },
+  //   [editJob.fulfilled]: (state, action) => {
+  //     state.isLoading = false;
+  //     toast.success("Job Modilied...");
+  //   },
+  //   [editJob.rejected]: (state, action) => {
+  //     state.isLoading = false;
+  //     toast.error(action.payload);
+  //   },
+  // },
+
+
+  **allJobsSlice** :
+
+  extraReducers: {
+    // [getAllJobs.pending]: (state) => {
+    //   state.isLoading = true;
+    // },
+    // [getAllJobs.fulfilled]: (state, { payload }) => {
+    //   state.isLoading = false;
+    //   state.jobs = payload.jobs;
+    //   state.totalJobs = payload.totalJobs;
+    //   state.numOfPages = payload.numOfPages;
+    // },
+    // [getAllJobs.rejected]: (state, { payload }) => {
+    //   state.isLoading = false;
+    //   toast.error(payload);
+    // },
+  //   [showStats.pending]: (state) => {
+  //     state.isLoading = true;
+  //   },
+  //   [showStats.fulfilled]: (state, { payload }) => {
+  //     state.isLoading = false;
+  //     state.stats = payload.defaultStats;
+  //     state.monthlyApplications = payload.monthlyApplications;
+  //   },
+  //   [showStats.rejected]: (state, { payload }) => {
+  //     state.isLoading = false;
+  //   },
+  // },
